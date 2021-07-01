@@ -1,17 +1,174 @@
 .menu{
     padding:2%;
     background-color: $black;
-    height: 5vh;
+    height: 10vh;
     color: $white;
-    &_item{
-        display:inline-block;
+    display: flex;
+    flex-direction: row;
+    &_img{
         width:30%;
+    }
+    &_logo{
+        justify-content: flex-start;
+        width:40%;
+    }
+    &_nav{
+        display:none;
+        justify-content: flex-end;
+        width:60%;
+        padding-left: 60%;
+        @include for-desktop-up{
+            display:block;
+        }
+    }
+    &_list{
+        display: flex;
+        flex-direction: row;
+    }
+    &_item{
+        justify-content: space-between;
         font-size: $medium;
         font-weight: $bold;
         font-family: $ubuntu;
+        padding-right: 10%;
+        list-style: none;
     }
     &_item_a{
         text-decoration: none;
         color:$white;
     }
+    &-toggler{
+        @include for-desktop-up{
+            display:none;
+        }
+    }
 }
+
+/*<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="navbar_divlogo"> 
+            <a class="navbar-brand" href="#"><span>XDA</span></a>
+          </div>
+          <button class="navbar-toggler ms-auto justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav_bloque collapse navbar-collapse ms-auto justify-content-end" id="navbarSupportedContent">
+            <ul class="nav_list navbar-nav  mb-2 mb-lg-0">
+              <li class="nav_list_item nav-item">
+                <a class="nav_list_a nav-link active" href="#">Mujer</a>
+              </li>
+              <li class="nav_list_item nav-item">
+                <a class="nav_list_a nav-link active" href="#">Hombre</a>
+              </li>
+              <li class="nav_list_item nav-item">
+                <a class="nav_list_a nav-link active" href="#">Accesorios</a>
+              </li>
+              <li class="nav_list_item nav-item">
+                <a class="nav_list_a nav-link active" href="#">Blog</a>
+              </li>
+          </div>
+        </div>
+      </nav> 
+
+      .navbar{
+        .nav_list{
+            @include for-tablet-portrait-up{
+                display:flex;
+                flex-direction: row;
+                }
+            @include for-tablet-landscape-up{
+                display:flex;
+                flex-direction: row;
+              }
+            @include for-desktop-up{
+                display:flex;
+                flex-direction: row;
+            }
+    
+        }
+        &-toggler{
+            cursor: pointer;
+            @include for-tablet-portrait-up{
+                display:none;
+              }
+            @include for-tablet-landscape-up{
+                display:none;
+              }
+            @include for-desktop-up{
+                display:none;
+            }
+    
+        }
+        &-nav{
+            display: block;
+            text-align: center;
+            @include for-tablet-portrait-up{
+                display:flex;
+                flex-direction: row;
+               justify-content: space-between;
+              }
+            @include for-tablet-landscape-up{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+              }
+        }
+        .nav-link{
+            @include for-tablet-portrait-up{
+               justify-content: space-between;
+              }
+            @include for-tablet-landscape-up{
+                justify-content: space-between;
+              }
+        }
+        &-toggler:checked {
+            display:block;
+            @include for-tablet-portrait-up{
+                display:none;
+              }
+            @include for-tablet-landscape-up{
+              display:none;
+            } 
+            @include for-desktop-up{
+                display: none;
+            }   
+        }
+        .collapse:not(.show){
+            @include for-tablet-portrait-up{
+                display:block;
+                justify-content: space-between;
+                padding-left: 40%;
+              }
+            @include for-tablet-landscape-up{
+                display:block;
+                justify-content: space-between;
+                padding-left: 40%;
+            } 
+        }
+    
+    }
+
+&-toggler:checked {
+    display:block;
+    @include for-tablet-portrait-up{
+        display:none;
+      }
+    @include for-tablet-landscape-up{
+      display:none;
+    } 
+    @include for-desktop-up{
+        display: none;
+    }   
+}
+.collapse:not(.show){
+    @include for-tablet-portrait-up{
+        display:block;
+        justify-content: space-between;
+        padding-left: 40%;
+      }
+    @include for-tablet-landscape-up{
+        display:block;
+        justify-content: space-between;
+        padding-left: 40%;
+    } 
+}*/
