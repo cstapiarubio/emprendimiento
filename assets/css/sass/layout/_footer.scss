@@ -1,0 +1,13 @@
+.footer{
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    padding-top: 2%;
+    font-family: $poppins;
+    font-weight: $regular;
+    font-size: $medium;
+    &_item{
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+}

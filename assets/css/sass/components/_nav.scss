@@ -1,0 +1,17 @@
+.menu{
+    padding:2%;
+    background-color: $black;
+    height: 5vh;
+    color: $white;
+    &_item{
+        display:inline-block;
+        width:30%;
+        font-size: $medium;
+        font-weight: $bold;
+        font-family: $ubuntu;
+    }
+    &_item_a{
+        text-decoration: none;
+        color:$white;
+    }
+}

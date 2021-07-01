@@ -1,0 +1,43 @@
+//section cursos
+.main{
+    margin:3%;
+}
+.course{
+    border: 1px solid $black;
+    &_div{
+        margin:3%;
+        padding:1%;
+        border: 1px dotted $black;
+    }
+    &_h3{
+        font-weight: $bold;
+        font-family: $ubuntu;
+        font-size: $large;
+        padding-top: 2%;
+    }
+    &_p{
+        font-family: $poppins;
+        font-size: $medium;
+        font-weight: $regular;
+        padding-top:2%;
+    }
+    &_h2{
+        font-weight: $bold;
+        font-family: $ubuntu;
+        font-size: $x-large;
+        padding-top:2%;
+    }
+    &_img{
+        width:100%;
+        height: auto;
+    }
+    &_item{
+        display:inline-block;
+        width: 5%;
+        text-decoration: none;
+    }
+    &_list{
+        padding-top:2%;
+        padding-bottom: 2%;
+    }
+}

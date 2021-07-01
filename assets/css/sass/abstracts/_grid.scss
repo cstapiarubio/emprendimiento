@@ -1,0 +1,65 @@
+//nav
+.menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    &_logo{
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+    &_nav{
+        grid-column: 3;
+        grid-row: 1;
+    }
+}
+
+//section main
+.main{
+    @include for-desktop-up {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .course{
+        @include for-desktop-up{
+            grid-column: 1 / 2;
+            grid-row: 1;
+        }
+    }
+    .article{
+        @include for-desktop-up{
+            grid-column: 2;
+            grid-row: 1;
+        }
+    }
+}
+
+//footer
+.footer{
+    @include for-desktop-up {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .footer_div1{
+        @include for-desktop-up{
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+    .footer_div2{
+        @include for-desktop-up{
+            grid-column: 2/4;
+            grid-row: 1;
+        }
+    }
+    &_item{
+        @include for-desktop-up{
+            display: inline-block;
+            width: 30%;
+        }
+    }
+}
