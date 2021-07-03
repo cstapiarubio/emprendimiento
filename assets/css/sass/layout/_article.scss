@@ -1,3 +1,4 @@
+
 .article{
     border: 1px solid $black;
     margin: 0.5%;
@@ -27,9 +28,12 @@
     &_gif{
         display: block;
         margin: auto;
+        width: 50%;
+        position: relative;
     }
     &_list{
         padding-top: 2%;
+        padding-left: 30px;
         font-family: $poppins;
         font-size: $medium;
         font-weight: $regular;
@@ -43,6 +47,7 @@
     &_item_redes{
         display: inline-block;
         width:5%;
+        padding-right: 5%;
     }
     &_h3_course{
         background-color: $gray;
@@ -54,3 +59,13 @@
         padding:1%;
     }
 }
+//animaciones
+.codigo{
+    animation: 2s traslate infinite linear alternate;
+}
+
+.rueda{
+    animation: 3s spin infinite linear;
+    transform-origin: 80% 80%;
+}
+
